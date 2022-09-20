@@ -8,14 +8,9 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 <_each team member clones repo and then edits/replace with their name below_>
 - Wesley Foster
 - Tyler Knox
-<<<<<<< HEAD
-- Jay Lee  
-- MEMBER04
-=======
 - Jay Lee
 - Chris Lehr
 - Miles Lim
->>>>>>> 628fb0f41e4a5896f65a755d326b873901a562f3
 
 
 ## Prerequisites  <_add anything else that applies_>
