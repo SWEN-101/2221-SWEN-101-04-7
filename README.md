@@ -9,7 +9,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Wesley Foster
 - Tyler Knox
 - Jay Lee
-- MEMBER04
+- Chris Lehr
 
 
 ## Prerequisites  <_add anything else that applies_>
