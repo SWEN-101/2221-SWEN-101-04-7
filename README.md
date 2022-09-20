@@ -10,6 +10,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Tyler Knox
 - Jay Lee
 - Chris Lehr
+- Miles Lim
 
 
 ## Prerequisites  <_add anything else that applies_>
