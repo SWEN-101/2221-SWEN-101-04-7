@@ -21,7 +21,7 @@
     align-items: center;
 }
 .logo {
-    width: 50px;
+    width: 400px;
     cursor: pointer;
     margin: 20px 5px;
 }
@@ -124,5 +124,6 @@ button:hover{
     #menuList{
         overflow: hidden;
         transition: 0.5s;
+        max-height: 140px;
     }
 }
