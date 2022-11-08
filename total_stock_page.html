@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group 7 Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <!-- probaly put an image in the navbar class="logo" or something--->
+            <img src="logo.png" alt="image of logo" class="logo">
+
+            <nav> 
+                <ul id="menuList">
+                    <li><a href="">Store Map</a></li>
+                    <li><a href="">Check Out</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="employee_page.html">Employee Pages</a></li>
+                </ul>
+            </nav>
+
+            <!-- for the drop down menu-->
+            <img src="dropdown.png" alt="drop down menu botton" class="menu_dropdown" onclick="dropdown()">
+
+        </div>
+
+        <div class="row">
+            <div class="col_main">
+                <h2> Page Title</h2>
+                <h4>Text</h4>
+                <button type="button"> exmaple button</button>
+            </div>
+        </div>
+
+
+    </div>
+
+<script>
+    var menuList =document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function dropdown(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "140px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
