@@ -9,10 +9,10 @@
     <div class="main">
         <div class="navbar">
             <!-- probaly put an image in the navbar class="logo" or something--->
-            <img src="logo.png" alt="image of logo" class="logo">
+            <img src="Quickshop Logo.PNG" alt="image of logo" class="logo">
 
             <nav> 
-                <ul id="menuList">
+                <ul id="menuList" style="max-height: 0px">
                     <li><a href="">Store Map</a></li>
                     <li><a href="">Check Out</a></li>
                     <li><a href="">Log In</a></li>
@@ -36,18 +36,7 @@
 
     </div>
 
-<script>
-    var menuList =document.getElementById("menuList");
-    menuList.style.maxHeight = "0px";
-    function dropdown(){
-        if(menuList.style.maxHeight == "0px"){
-            menuList.style.maxHeight = "140px";
-        }
-        else{
-            menuList.style.maxHeight = "0px";
-        }
-    }
-</script>
+<script src="index.js"></script>
 
 </body>
 </html>
