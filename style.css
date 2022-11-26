@@ -19,6 +19,8 @@
     width: 100%;
     display: flex;
     align-items: center;
+    /*!Changes Color of Navbar!*/
+    background-color: rgb(100, 100, 100)
 }
 .logo {
     width: 400px;
@@ -99,6 +101,10 @@ button:hover{
     width: 180px;
 }
 
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
 
 @media only screen and (max-width:700px){
     nav ul{
