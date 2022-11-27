@@ -48,26 +48,51 @@
         }
     }
 
-    /* TODO
-    function that will update a block of text with items that are low on stock
+  
 
-    notifications = []
-    function notify(){
-        if(stock_onFloor <= 2) {
-            insert notification at notifications[0]
+    var stock = []
+    var notifications = []
+
+    function split_row(row){
+        var insideQuote = false,                                             
+            entries = [],                                                    
+            entry = [];
+        row.split('').forEach(function (character) {                         
+            if(character === '"') {
+            insideQuote = !insideQuote;                                      
+            } else {
+            if(character == "," && !insideQuote) {                           
+                entries.push(entry.join(''));                                  
+                entry = [];                                                    
+            } else {
+                entry.push(character);                                         
+            }                                                                
+            }                                                                  
+        });
+        entries.push(entry.join(''));                                        
+        stock.push(entries);
+        return entries;                                         
         }
+
+    function fill_stock(){
+        const f = require("fs");
+        var file = "stock.csv";
+        var all_txt = fs.readFile(file).split("\n")
+        /*this fills the stock array*/
+        for(let line in all_txt){
+            split_row(line)
+        }
+    }
+    
+    function display_noti(){
+        fill_stock();
+        for(let x in stock){
+            if(x[2] <= 3){notifications.push("RESTOCK ITEM: " + x[0] + "\tID: " + x[1])}
+        }
+        
     }
 
 
-    function that displayes Notifications
-    function display_not(){
-        for i in notifications{
-            print i
-        }
-    }
-
-
-    */
 
 
 
