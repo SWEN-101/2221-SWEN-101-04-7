@@ -27,30 +27,10 @@
 
         <div class="row">
             <div class="col_main">
-                <h2> Page Title</h2>
-                <h4>Text</h4>
-                <button type="button"> exmaple button</button>
-            </div>
-        </div>
-
-
-    </div>
-
-<script>
-    var menuList =document.getElementById("menuList");
-    menuList.style.maxHeight = "0px";
-    function dropdown(){
-        if(menuList.style.maxHeight == "0px"){
-            menuList.style.maxHeight = "140px";
-        }
-        else{
-            menuList.style.maxHeight = "0px";
-        }
-    }
-
-  
-
-    var stock = []
+                <h2> notifications</h2>
+                <h4>
+                    <script>
+                            var stock = []
     var notifications = []
 
     function split_row(row){
@@ -87,11 +67,35 @@
     function display_noti(){
         fill_stock();
         for(let x in stock){
-            if(x[2] <= 3){notifications.push("RESTOCK ITEM: " + x[0] + "\tID: " + x[1])}
+            if(x[3] <= 3){notifications.push("RESTOCK ITEM: " + x[0] + "\tID: " + x[1])}
         }
-
+        return notifications
     }
 
+                        notifications = display_noti()
+                        for(let i in notifications){
+                            document.write(i + " \n")
+                        }
+                    </script>
+                </h4>
+                <button type="button"> exmaple button</button>
+            </div>
+        </div>
+
+
+    </div>
+
+<script>
+    var menuList =document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function dropdown(){
+        if(menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "140px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
 
 
 
