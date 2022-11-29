@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group 7 Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <!-- probaly put an image in the navbar class="logo" or something--->
+            <img src="Quickshop Logo.PNG" alt="image of logo" class="logo">
+
+            <nav> 
+                <ul id="menuList" style="max-height: 0px">
+                    <li><a href="map.html">Store Map</a></li>
+                    <li><a href="check_out.html">Check Out</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="employee_page.html">Employee Pages</a></li>
+                </ul>
+            </nav>
+
+            <!-- for the drop down menue-->
+            <img src="dropdown.png" alt="drop down menu botton" class="menu_dropdown" onclick="dropdown()">
+
+        </div>
+
+        <div class="row">
+            <div class="col_main">
+                <h2>Join EZ SHOP today!</h2>
+                <h4>EzShop is a team of five developers dedicated to creating tools with the purpose of streamlining consumer experiences within both local and chain businesses. Our current product “EzShop” is a tool created with the purpose of making shopping faster for consumers, while preventing any downsides to the company employing it. EzShop accomplishes this by monitoring shelved products and displaying their locations to customers on either digital screens placed throughout the store or on the customer’s own electronic device. This service prevents companies from losing profits from customers who purchase things they did not intend to buy when entering the store because customers are still required to walk to their intended product, past other products that they may decide to buy.
+                    <br>
+                    <br>
+                    
+                    If you are a store owner who wants to utilize EZ-Shop in your store, please click the button below and fill out the form. 
+                <br>
+                EZ SHOP is an industry leader in creating and maintaining your buissness
+                </h4>
+                <button type="button" style="width: 50%; height: 100px;">Join Today</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        var menuList =document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function dropdown(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "140px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+
+</body>
+</html>
