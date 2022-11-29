@@ -64,12 +64,10 @@ nav ul li a:hover{
 }
 
 .col_main{
-    flex-basis: 50%;
+    flex-basis: 40%;
     position: relative;
     margin-left: 5px;
     margin-right: 5px;
-    justify-content: center;
-    align-items: center;
 }
 
 .col_main h2{
@@ -173,7 +171,4 @@ footer ul li{
 }
 .body_p_i h1{
     text-align: center;
-}
-.body_p_i h3{
-    text-align: justify;
 }
