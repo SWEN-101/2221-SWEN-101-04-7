@@ -162,3 +162,16 @@ footer ul li{
     padding-right: 10%;
     padding-left: 10%;
 }
+
+.body_p_i p{
+    text-align: center;
+}
+.body_p_i h2{
+    text-align: center;
+}
+.body_p_i h1{
+    text-align: center;
+}
+.body_p_i h3{
+    text-align: justify;
+}
