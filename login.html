@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Product Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class = "body_p_i">
+    <div class = "main">
+        <div class = "navbar">
+            <a href="main_page.html"><img src="https://fontmeme.com/permalink/221125/108df5992579f825ea0fd3dab0be4882.png" alt="EZ-Shop" class="logo" border="0"></a>
+
+            <nav>
+                <ul id="menuList" style="max-height: 0px">
+                    <li><a href="map.html">Store Map</a></li>
+                    <li><a href="check_out.html">Check Out</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="employee_page.html">Employee Pages</a></li>
+                </ul>
+            </nav>
+
+            <!--Drop Down Menu-->
+            <img src="dropdown.png" alt="drop down menu botton" class="menu_dropdown" onclick="dropdown()">
+
+        </div>
+        <center><h1>Log In</h1></center>
+        <hr>
+        <br>
+        <br>
+        
+        <center><button onclick="window.location.href='main_page.html';">
+            Click Here
+          </button></div></center>
+
+    </div>
+
+    <script>
+        var menuList =document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function dropdown(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "140px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+</body>
+</html>
