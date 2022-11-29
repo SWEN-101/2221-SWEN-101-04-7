@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
+    <div class="main">  
         <div class="navbar">
             <!-- probaly put an image in the navbar class="logo" or something--->
             <img src="logo.png" alt="image of logo" class="logo">
@@ -27,9 +27,20 @@
 
         <div class="row">
             <div class="col_main">
-                <h2> Page Title</h2>
-                <h4>Text</h4>
-                <button type="button"> exmaple button</button>
+                <h2> Notifications</h2>
+                <h4>
+                    <script>
+                        var notifications = ["Restock Item: Apples", "Restock Item: Pears", "Restock Item: Boots", "Spill in Isle: 3"];
+                        for(let i in notifications)
+                        {
+                            document.write(notifications[i]+"<br>");
+                            document.write("<button type=\"button\">Resolve</button>");
+                            document.write("<br><br>");
+                        }
+
+
+                    </script>
+                </h4>
             </div>
         </div>
 
@@ -47,30 +58,6 @@
             menuList.style.maxHeight = "0px";
         }
     }
-
-    /* TODO
-    function that will update a block of text with items that are low on stock
-
-    notifications = []
-    function notify(){
-        if(stock_onFloor <= 2) {
-            insert notification at notifications[0]
-        }
-    }
-
-
-    function that displayes Notifications
-    function display_not(){
-        for i in notifications{
-            print i
-        }
-    }
-
-
-    */
-
-
-
 
 </script>
 

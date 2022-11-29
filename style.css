@@ -7,8 +7,8 @@
 .main{
     width: 100%;
     min-height: 100vh;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -19,6 +19,8 @@
     width: 100%;
     display: flex;
     align-items: center;
+    /*!Changes Color of Navbar!*/
+    background-color: rgb(100, 100, 100)
 }
 .logo {
     width: 400px;
@@ -91,21 +93,23 @@ button{
     transition: font-size 0.7s;
 }
 button:hover{
-    display: block;
     cursor: pointer;
-    align-content: center;
     font-size: 22px;
-    display: flex;
     width: 180px;
+    color: #a89179;
 }
 
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
 
 @media only screen and (max-width:700px){
     nav ul{
         width: 100%;
         background: grey;
         position: absolute;
-        top: 75px;
+        top: 10%;
         right: 0;
         z-index: 2;
     }
@@ -126,4 +130,35 @@ button:hover{
         transition: 0.5s;
         max-height: 140px;
     }
+
+    footer ul{
+        position: relative;
+        background: #b5ada5;
+        
+    }
+}
+
+.search_bar{
+    font-size: larger;
+    
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /*!Changes Color of Navbar!*/
+    background-color: #b5ada5;
+    padding: 10px 0px 10px 0px;
+    overflow:hidden;
+    text-align: center;
+}
+
+footer ul{
+    text-align: center;
+}
+
+footer ul li{
+    padding-right: 10%;
+    padding-left: 10%;
 }

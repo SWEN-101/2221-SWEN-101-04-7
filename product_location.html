@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Product Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "main">
+        <div class = "navbar">
+            <a href="template.html"><img src="https://fontmeme.com/permalink/221125/108df5992579f825ea0fd3dab0be4882.png" alt="EZ-Shop" class="logo" border="0"></a>
+
+            <nav>
+                <ul id="menuList" style="max-height: 0px">
+                    <li><a href="">Store Map</a></li>
+                    <li><a href="">Check Out</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="employee_page.html">Employee Pages</a></li>
+                </ul>
+            </nav>
+
+            <!--Drop Down Menu-->
+            <img src="dropdown.png" alt="drop down menu botton" class="menu_dropdown" onclick="dropdown()">
+
+        </div>
+        <center><h1>Product Location</h1></center>
+        <hr>
+        <br>
+        <br>
+        <h3>[Location Name]</h3>
+        <br>
+        <center><table>
+            <tr>
+                <th>Product Image</th>
+                <th>Product Serial #</th>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="https://www.midwestboots.com/mm5/graphics/00000001/Mens-Belleville-Waterproof-Military-Boots-700-L.jpg" alt="Very Tactical Boots"
+                    width = 75 height = 100></td>
+                <td>12345678</td>
+                <td>550</td>
+                <td>$100.50</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+            </tr>
+        </table></center>
+    </div>
+
+    <script>
+        var menuList =document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function dropdown(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "140px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+</body>
+</html>

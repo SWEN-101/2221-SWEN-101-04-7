@@ -1,11 +1,13 @@
 /**
  * Toggles the dropdown menu.
  */
-function dropdown(){
-    const menuList = document.getElementById("menuList");
-    if(menuList.style.display === "none"){
-        menuList.style.display = "block";
-    } else{
-        menuList.style.display = "none";
-    }
-}
+ var menuList =document.getElementById("menuList");
+ menuList.style.maxHeight = "0px";
+ function dropdown(){
+     if(menuList.style.maxHeight == "0px"){
+         menuList.style.maxHeight = "140px";
+     }
+     else{
+         menuList.style.maxHeight = "0px";
+     }
+ }
