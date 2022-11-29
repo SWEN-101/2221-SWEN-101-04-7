@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group 7 Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <!-- probaly put an image in the navbar class="logo" or something--->
+            <img src="Quickshop Logo.PNG" alt="image of logo" class="logo">
+
+            <nav> 
+                <ul id="menuList" style="max-height: 0px">
+                    <li><a href="">Store Map</a></li>
+                    <li><a href="">Check Out</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="employee_page.html">Employee Pages</a></li>
+                </ul>
+            </nav>
+
+            <!-- for the drop down menue-->
+            <img src="dropdown.png" alt="drop down menu botton" class="menu_dropdown" onclick="dropdown()">
+
+        </div>
+
+        <div class="row">
+            <div class="col_main">
+                <h2> Your Items</h2>
+                <th>Product Image</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <button type="button"> Checkout</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        var menuList =document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function dropdown(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "140px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+
+</body>
+</html>
